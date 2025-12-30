@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI Theme Demo Card</title>
+  <link href="https://fonts.googleapis.com/css?family=Outfit:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <meta name="viewport" content="width=400, initial-scale=1">
+  <style>
+    body {
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-family), sans-serif;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-card">
+    <div class="card-title">
+      Patient: <span class="card-label">Sample Name</span>
+    </div>
+    <div class="card-content">
+      <div>Status: <span class="card-label">Low Risk</span></div>
+      <div>Disease Probability: <strong>12.3%</strong></div>
+    </div>
+    <div style="margin-top:1.2rem;">
+      <button class="btn-primary">Alert</button>
+      <button class="btn-accent">Details</button>
+    </div>
+  </div>
+</body>
+</html>
